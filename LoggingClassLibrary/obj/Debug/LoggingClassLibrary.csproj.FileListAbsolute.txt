@@ -1,0 +1,17 @@
+C:\Users\imaxp\Desktop\ExtruderModel_v3\LoggingClassLibrary\bin\Debug\NLog.config
+C:\Users\imaxp\Desktop\ExtruderModel_v3\LoggingClassLibrary\bin\Debug\LoggingClassLibrary.dll
+C:\Users\imaxp\Desktop\ExtruderModel_v3\LoggingClassLibrary\bin\Debug\LoggingClassLibrary.pdb
+C:\Users\imaxp\Desktop\ExtruderModel_v3\LoggingClassLibrary\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\imaxp\Desktop\ExtruderModel_v3\LoggingClassLibrary\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\imaxp\Desktop\ExtruderModel_v3\LoggingClassLibrary\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\imaxp\Desktop\ExtruderModel_v3\LoggingClassLibrary\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
+C:\Users\imaxp\Desktop\ExtruderModel_v3\LoggingClassLibrary\bin\Debug\NLog.dll
+C:\Users\imaxp\Desktop\ExtruderModel_v3\LoggingClassLibrary\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\imaxp\Desktop\ExtruderModel_v3\LoggingClassLibrary\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\imaxp\Desktop\ExtruderModel_v3\LoggingClassLibrary\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Users\imaxp\Desktop\ExtruderModel_v3\LoggingClassLibrary\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+C:\Users\imaxp\Desktop\ExtruderModel_v3\LoggingClassLibrary\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
+C:\Users\imaxp\Desktop\ExtruderModel_v3\LoggingClassLibrary\bin\Debug\NLog.xml
+C:\Users\imaxp\Desktop\ExtruderModel_v3\LoggingClassLibrary\obj\Debug\LoggingClassLibrary.csprojResolveAssemblyReference.cache
+C:\Users\imaxp\Desktop\ExtruderModel_v3\LoggingClassLibrary\obj\Debug\LoggingClassLibrary.dll
+C:\Users\imaxp\Desktop\ExtruderModel_v3\LoggingClassLibrary\obj\Debug\LoggingClassLibrary.pdb

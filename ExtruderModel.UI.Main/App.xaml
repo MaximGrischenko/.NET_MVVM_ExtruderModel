@@ -1,0 +1,16 @@
+﻿<Application x:Class="ExtruderModel.UI.Main.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             >
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/ExtruderModel.Module.PID_Parameters;component/PIDDictionary.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/ExtruderModel.Module.Temperature_Parameters;component/TempDictionary.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/ExtruderModel.Module.Graph;component/ChartDictionary.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/ExtruderModel.Module.Message;component/MessageDictionary.xaml" />
+                <ResourceDictionary Source="Dictionary.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

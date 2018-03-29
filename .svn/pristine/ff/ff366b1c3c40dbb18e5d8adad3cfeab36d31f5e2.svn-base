@@ -1,0 +1,201 @@
+﻿<Window x:Class="ExtruderModel.UI.Main.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:regions="http://prismlibrary.com/"
+        Title="ExtruderModel"
+        Height="700"
+        Width="970"
+        ResizeMode="NoResize"
+        Icon="/ExtruderModel.UI.Main;component/Images/i_Window.png"
+        WindowStartupLocation="CenterScreen"
+        mc:Ignorable="d"
+        >
+
+
+    <Grid Background="SlateGray">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="63" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0"
+                    Height="63"
+                    VerticalAlignment="Center"
+                    Background="{StaticResource header}"
+                    >
+            <Label Height="63"
+                   VerticalAlignment="Center"
+                   VerticalContentAlignment="Center"
+                   Content="Модель работы обогревов экструдера серии Nokia MP60"
+                   FontFamily="Georgia"
+                   FontSize="22"
+                   Foreground="White"
+                   />
+        </StackPanel>
+
+        <DockPanel Grid.Row="1"
+                   Width="210"
+                   HorizontalAlignment="Left"
+                   Style="{StaticResource LeftBarDock}"
+                   >
+            <StackPanel Width="200"
+                        Margin="0"
+                        Style="{StaticResource LeftBarStack}"
+                        >
+                <Label VerticalAlignment="Center"
+                       Content="Панель оператора"
+                       FontFamily="Georgia"
+                       FontSize="18"
+                       Foreground="White"
+                       />
+                <Button x:Name="btnHeatEnable"
+                        Width="188"
+                        Height="62"
+                        Margin="0,30,0,10"
+                        Background="{StaticResource bHeatEnable}"
+                        />
+                <Button x:Name="btnHeatStnb"
+                        Width="188"
+                        Height="62"
+                        Margin="0,0,0,60"
+                        Background="{StaticResource bHeatStnb}"
+                        />
+                <StackPanel Width="200"
+                            Margin="0"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"
+                            >
+                    <Label Content="СТАТУС:"
+                           FontFamily="Georgia"
+                           FontSize="16"
+                           FontWeight="DemiBold"
+                           Foreground="White"
+                           />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Ellipse x:Name="Run"
+                             Width="77"
+                             Height="77"
+                             Margin="10,0,0,0"
+                             HorizontalAlignment="Left"
+                             Fill="{StaticResource lGreen}"
+                             Stroke="Black"
+                             />
+                    <Label Width="100"
+                           Height="25"
+                           Margin="10,15,0,0"
+                           VerticalAlignment="Top"
+                           Content="Обогревы"
+                           FontFamily="Georgia"
+                           FontSize="12"
+                           FontWeight="DemiBold"
+                           Foreground="White"
+                           />
+                    <Label Width="100"
+                           Height="25"
+                           Margin="-100,35,0,0"
+                           VerticalAlignment="Top"
+                           Content="включены"
+                           FontFamily="Georgia"
+                           FontSize="12"
+                           FontWeight="DemiBold"
+                           Foreground="White"
+                           />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Ellipse x:Name="Standby"
+                             Width="77"
+                             Height="77"
+                             Margin="10,10,0,0"
+                             HorizontalAlignment="Left"
+                             Fill="{StaticResource lYellow}"
+                             Stroke="Black"
+                             />
+                    <Label Width="100"
+                           Height="25"
+                           Margin="10,25,0,0"
+                           VerticalAlignment="Top"
+                           Content="Режим"
+                           FontFamily="Georgia"
+                           FontSize="12"
+                           FontWeight="DemiBold"
+                           Foreground="White"
+                           />
+                    <Label Width="100"
+                           Height="25"
+                           Margin="-100,45,0,0"
+                           VerticalAlignment="Top"
+                           Content="ожидания"
+                           FontFamily="Georgia"
+                           FontSize="12"
+                           FontWeight="DemiBold"
+                           Foreground="White"
+                           />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Ellipse x:Name="Fault"
+                             Width="77"
+                             Height="77"
+                             Margin="10,10,0,0"
+                             HorizontalAlignment="Left"
+                             Fill="{StaticResource lRed}"
+                             Stroke="Black"
+                             />
+                    <Label Width="100"
+                           Height="25"
+                           Margin="10,35,0,0"
+                           VerticalAlignment="Top"
+                           Content="Авария"
+                           FontFamily="Georgia"
+                           FontSize="12"
+                           FontWeight="DemiBold"
+                           Foreground="White"
+                           />
+                </StackPanel>
+            </StackPanel>
+        </DockPanel>
+
+        <DockPanel Grid.Row="1"
+                   Width="40"
+                   HorizontalAlignment="Right"
+                   Style="{StaticResource RightBarDock}"
+                   >
+            <StackPanel x:Name="btnBar"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Top"
+                        Orientation="Horizontal"
+                        >
+                <StackPanel.LayoutTransform>
+                    <RotateTransform Angle="270" />
+                </StackPanel.LayoutTransform>
+
+                <Button Width="129"
+                        Height="35"
+                        Background="{StaticResource bMessage}"
+                        Command="{Binding Path=MessageCommand}"
+                        />
+                <Button Width="129"
+                        Height="35"
+                        Background="{StaticResource bGraph}"
+                        Command="{Binding Path=GraphCommand}"
+                        />
+                <Button Width="129"
+                        Height="35"
+                        Background="{StaticResource bSettings}"
+                        Command="{Binding Path=SettingsCommand}" />
+            </StackPanel>
+        </DockPanel>
+        <Border Grid.Row="1"
+                Margin="210,0,40,0"
+                BorderBrush="#FF6458D4"
+                BorderThickness="0,1,1,1"
+                >
+            <ContentControl HorizontalContentAlignment="Stretch"
+                            VerticalContentAlignment="Stretch"
+                            regions:RegionManager.RegionName="ContentRegion"
+                            />
+        </Border>
+    </Grid>
+</Window>

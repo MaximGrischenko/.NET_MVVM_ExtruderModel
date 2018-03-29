@@ -1,0 +1,15 @@
+﻿using System;
+
+namespace SharedCommunicationClassesLibrary
+{
+    public interface IExtruderControl
+    {
+        void Start();
+        void Stop();
+        void SetParameter(IPIDControl parameter);
+        void SetDataToLoop(IPIDReference reference);
+
+        event EventHandler LoopDataChanged;
+
+    }
+}

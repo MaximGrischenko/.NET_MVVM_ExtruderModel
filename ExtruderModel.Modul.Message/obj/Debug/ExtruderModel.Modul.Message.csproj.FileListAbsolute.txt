@@ -1,0 +1,13 @@
+C:\Users\imaxp\Desktop\ExtruderModel\trunk\ExtruderModel_v3\ExtruderModel.UI.Main\bin\Debug\Modules\ExtruderModel.Modul.Message.dll.config
+C:\Users\imaxp\Desktop\ExtruderModel\trunk\ExtruderModel_v3\ExtruderModel.UI.Main\bin\Debug\Modules\ExtruderModel.Modul.Message.dll
+C:\Users\imaxp\Desktop\ExtruderModel\trunk\ExtruderModel_v3\ExtruderModel.UI.Main\bin\Debug\Modules\ExtruderModel.Modul.Message.pdb
+C:\Users\imaxp\Desktop\ExtruderModel\trunk\ExtruderModel_v3\ExtruderModel.Modul.Message\obj\Debug\ExtruderModel.Modul.Message.csprojResolveAssemblyReference.cache
+C:\Users\imaxp\Desktop\ExtruderModel\trunk\ExtruderModel_v3\ExtruderModel.Modul.Message\obj\Debug\UControl_Messages.g.cs
+C:\Users\imaxp\Desktop\ExtruderModel\trunk\ExtruderModel_v3\ExtruderModel.Modul.Message\obj\Debug\ExtruderModel.Modul.Message_MarkupCompile.cache
+C:\Users\imaxp\Desktop\ExtruderModel\trunk\ExtruderModel_v3\ExtruderModel.Modul.Message\obj\Debug\ExtruderModel.Modul.Message_MarkupCompile.lref
+C:\Users\imaxp\Desktop\ExtruderModel\trunk\ExtruderModel_v3\ExtruderModel.Modul.Message\obj\Debug\UControl_Messages.baml
+C:\Users\imaxp\Desktop\ExtruderModel\trunk\ExtruderModel_v3\ExtruderModel.Modul.Message\obj\Debug\ExtruderModel.Modul.Message.g.resources
+C:\Users\imaxp\Desktop\ExtruderModel\trunk\ExtruderModel_v3\ExtruderModel.Modul.Message\obj\Debug\ExtruderModel.Modul.Message.Properties.Resources.resources
+C:\Users\imaxp\Desktop\ExtruderModel\trunk\ExtruderModel_v3\ExtruderModel.Modul.Message\obj\Debug\ExtruderModel.Modul.Message.csproj.GenerateResource.Cache
+C:\Users\imaxp\Desktop\ExtruderModel\trunk\ExtruderModel_v3\ExtruderModel.Modul.Message\obj\Debug\ExtruderModel.Modul.Message.dll
+C:\Users\imaxp\Desktop\ExtruderModel\trunk\ExtruderModel_v3\ExtruderModel.Modul.Message\obj\Debug\ExtruderModel.Modul.Message.pdb

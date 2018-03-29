@@ -1,0 +1,239 @@
+﻿using System.Collections.Generic;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
+using SharedCommunicationClassesLibrary;
+using Prism.Commands;
+using System.Windows.Input;
+using ExtruderModel.Module.PID_Parameters.Annotations;
+using Prism.Modularity;
+using Prism.Regions;
+
+namespace ExtruderModel.Module.PID_Parameters.ViewModel
+{
+    public class PidParametersViewModel : IViewModel, INotifyPropertyChanged
+    {
+        protected IExtruderControl ExtruderControl;
+        internal virtual IRegionManager RegionManager { get; set; }
+        internal virtual IModuleManager ModuleManager { get; set; }
+
+        #region
+        List<PidControl> _listPidControls = new List<PidControl>();
+
+        #endregion
+        public PidParametersViewModel(IRegionManager regionManager, IModuleManager moduleManager, IExtruderControl extruderControl)
+        {
+
+            this._listPidControls.Add(new PidControl());
+            this._listPidControls.Add(new PidControl());
+            this._listPidControls.Add(new PidControl());
+            this._listPidControls.Add(new PidControl());
+            this._listPidControls.Add(new PidControl());
+            this._listPidControls.Add(new PidControl());
+            this._listPidControls.Add(new PidControl());
+
+
+            RegionManager = regionManager;
+            ModuleManager = moduleManager;
+            ExtruderControl = extruderControl;
+
+            this.CloseParameters = new DelegateCommand(
+                () =>
+                {
+                    ModuleManager.LoadModule("TempParameters");
+                    RegionManager.RequestNavigate("ContentRegion", "TempParametersView");
+                });
+
+            this.SendParameters = new DelegateCommand(
+                () =>
+                {
+                    this.ExtruderControl.SetParameter(_listPidControls);
+                });
+        }
+#region Property commands
+        public ICommand CloseParameters { get; set; }
+        public ICommand SendParameters { get; set; }
+#endregion
+
+        public PidControl Zone1PidControl
+        {
+            get
+            {
+                return this._zone1Control;
+            }
+            set
+            {
+                if (value == this._zone1Control)
+                    return;
+
+                this._zone1Control = value;
+                OnPropertyChanged(nameof(Zone1PidControl));
+            }
+        }
+        public PidControl Zone2PidControl
+        {
+            get
+            {
+                return this._zone2Control;
+            }
+            set
+            {
+                if (value == this._zone2Control)
+                    return;
+
+                this._zone2Control = value;
+                OnPropertyChanged(nameof(Zone2PidControl));
+            }
+        }
+        public PidControl Zone3PidControl
+        {
+            get
+            {
+                return this._zone3Control;
+            }
+            set
+            {
+                if (value == this._zone3Control)
+                    return;
+
+                this._zone3Control = value;
+                OnPropertyChanged(nameof(Zone3PidControl));
+            }
+        }
+        public PidControl Zone4PidControl
+        {
+            get
+            {
+                return this._zone4Control;
+            }
+            set
+            {
+                if (value == this._zone4Control)
+                    return;
+
+                this._zone4Control = value;
+                OnPropertyChanged(nameof(Zone4PidControl));
+            }
+        }
+        public PidControl Zone5PidControl
+        {
+            get
+            {
+                return this._zone5Control;
+            }
+            set
+            {
+                if (value == this._zone5Control)
+                    return;
+
+                this._zone5Control = value;
+                OnPropertyChanged(nameof(Zone5PidControl));
+            }
+        }
+        public PidControl Zone6PidControl
+        {
+            get
+            {
+                return this._zone6Control;
+            }
+            set
+            {
+                if (value == this._zone6Control)
+                    return;
+
+                this._zone6Control = value;
+                OnPropertyChanged(nameof(Zone6PidControl));
+            }
+        }
+        public PidControl Zone7PidControl
+        {
+            get
+            {
+                return this._zone7Control;
+            }
+            set
+            {
+                if (value == this._zone7Control)
+                    return;
+
+                this._zone7Control = value;
+                OnPropertyChanged(nameof(Zone7PidControl));
+            }
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        [NotifyPropertyChangedInvocator]
+        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+    }
+
+
+    public sealed class PidControl : IPIDControl, INotifyPropertyChanged
+    {
+        private int _loop = 0;
+        private double _k = 0.0;
+        private double _ti = 0.0;
+        private double _td = 0.0;
+        private double _stTemp = 0.0;
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        public double StTemp
+        {
+            get { return _stTemp; }
+            set
+            {
+                _stTemp = value;
+                OnPropertyChanged(nameof(StTemp));
+            }
+        }
+
+        public double Td
+        {
+            get { return _td; }
+            set
+            {
+                _td = value;
+                OnPropertyChanged(nameof(Td));
+            }
+        }
+
+        public double Ti
+        {
+            get { return _ti; }
+            set
+            {
+                _ti = value;
+                OnPropertyChanged(nameof(Ti));
+            }
+        }
+
+        public double K
+        {
+            get { return _k; }
+            set
+            {
+                _k = value;
+                OnPropertyChanged(nameof(K));
+            }
+        }
+
+        public int Loop
+        {
+            get { return _loop; }
+            set
+            {
+                _loop = value;
+                OnPropertyChanged(nameof(Loop));
+            }
+        }
+
+        [NotifyPropertyChangedInvocator]
+        private void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+    }
+}

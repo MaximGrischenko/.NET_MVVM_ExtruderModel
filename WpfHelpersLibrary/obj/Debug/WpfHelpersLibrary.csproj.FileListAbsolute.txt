@@ -1,0 +1,7 @@
+C:\Users\imaxp\Desktop\ExtruderModel_v3\ExtruderModel.UI.Main\bin\Debug\WpfHelpersLibrary.dll
+C:\Users\imaxp\Desktop\ExtruderModel_v3\ExtruderModel.UI.Main\bin\Debug\WpfHelpersLibrary.pdb
+C:\Users\imaxp\Desktop\ExtruderModel_v3\WpfHelpersLibrary\obj\Debug\WpfHelpersLibrary.csprojResolveAssemblyReference.cache
+C:\Users\imaxp\Desktop\ExtruderModel_v3\WpfHelpersLibrary\obj\Debug\WpfHelpersLibrary.Properties.Resources.resources
+C:\Users\imaxp\Desktop\ExtruderModel_v3\WpfHelpersLibrary\obj\Debug\WpfHelpersLibrary.csproj.GenerateResource.Cache
+C:\Users\imaxp\Desktop\ExtruderModel_v3\WpfHelpersLibrary\obj\Debug\WpfHelpersLibrary.dll
+C:\Users\imaxp\Desktop\ExtruderModel_v3\WpfHelpersLibrary\obj\Debug\WpfHelpersLibrary.pdb
